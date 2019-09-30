@@ -12,7 +12,7 @@ elif num%2!=0:
     print(f"The given integer {num} is an odd number")
 
 
-# In[2]:
+# In[4]:
 
 
 #print if given number is prime
@@ -47,14 +47,81 @@ print(f"Factorial of {n} is:")
 print(fact)    
 
 
+# In[30]:
+
+
+#fibonacci series of a given number
+num=int(input("enter the number:"))
+def fib(n):
+    x=0
+    y=1
+    if n<0:
+        print("invalid number")
+    elif n==0 or n==1:
+        print(x)
+    else:
+        print(x)
+        print(y)
+    
+        for i in range(2,n):
+            z=x+y
+            x=y
+            y=z
+            print(z)
+        
+fib(num)
+    
+        
+
+
 # In[ ]:
 
 
 
+        
+
+
+# 
+
+# In[2]:
+
+
+#amstrong 
+number=int(input("enter a number :"))
+sum=0
+temp=number
+while(temp>0):
+    digit=temp%10
+    sum+=digit**3
+    temp//=10
+if number==sum:
+    print("Amstrong number")
+else:
+    print("not an amstrong number")
+
+
+
+# In[5]:
+
+
+#Reverse a string
+s=input("Enter anything and i will reverse it")
+def rev(s):
+    return s[::-1]
+rev(s)
 
 
 # In[ ]:
 
 
-
+#sum of n digits
+n=int(input("Enter any number:"))
+def digits(n):
+    sum=0
+    while(n>0):
+        reminder=n%10
+        sum=sum+reminder
+        n=n//10
+        return sum
+digits(n)
 
